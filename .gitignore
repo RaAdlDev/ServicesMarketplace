@@ -1,0 +1,7 @@
+alembic.ini
+venv/
+.env
+.pytest_cache
+__pycache__/
+*.py[cod]
+*$py.class
