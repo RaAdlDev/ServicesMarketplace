@@ -4,6 +4,8 @@ Backend for a professional services marketplace (Upwork-style) with escrow payme
 
 A **client** publishes a project (`Job`), **professionals** apply (`Application`), the client accepts a proposal and a **contract** (`Contract`) is generated. The client's money stays held in escrow until the client approves the delivery, at which point it's released to the professional. Clients and professionals can negotiate project details through a real-time chat on the platform via WebSockets.
 
+Note: the frontend of this project is in process
+
 ---
 
 ## Table of contents
