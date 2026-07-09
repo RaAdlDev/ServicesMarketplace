@@ -1,0 +1,94 @@
+body{
+    color: #2D3748;
+    margin: 0;
+
+}
+.navbar{
+    font-family: "Montserrat";
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    padding: 20px 40px;
+    border-bottom: 2px solid #1A365D;
+    background-color: #F8F9FA;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.links{
+    margin-right: 40px;
+    color: #1A365D;
+}
+img{
+    height: 70px;
+    margin-right: 40px;
+}
+.web-name{
+    font-size: 2.3em;
+    margin-right: 40px;
+}
+.searchbar-form{
+    display: flex;
+    width: 800px;
+    margin: auto;
+}
+#search-button{
+    height: 35px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #F66D1A;
+    width: 90px;
+}
+#searchbar{
+    padding: 12px;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid  #CBD5E1;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+
+}
+#searchbar:focus{
+    border-color: #1A365D;
+}
+
+.cards{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.job-title{
+    font-family: "Montserrat";
+}
+.job-card{
+    border-left: 1px solid #1A365D;
+    border-bottom: 1px solid #1A365D;
+    background-color: #F8F9FA;
+    padding: 40px;
+}
+.job-info{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F66D1A;
+}
+.job-info:hover, #search-button:hover{
+    background-color: #DD5A0F;
+}
+.card-description{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+#search-button, .job-info {
+    color: white;
+    cursor: pointer;
+}
+

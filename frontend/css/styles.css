@@ -10,6 +10,7 @@ body{
     align-items: center;
     font-family: "Montserrat";
     height: 100vh;
+    flex-direction: column;
 }
 .login_container{
     flex-direction: column;
