@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons-images/icon.png" type="image/png">
+    <title>Register</title>
+</head>
+<body>
+    <main class="register-container">
+        <h1 class="register__title">Services Marketplace</h1>
+        <p>Find a way to improve</p>
+        <form class="register__form">
+            <div class="register__item item--user">
+                <label for="username_input">Username</label>
+                <input required class="register__item item--input" id="username_input"type="text" placeholder="Username">
+                <label for="email_input">Email</label>
+                <input required class="register__item item--input" type="email" placeholder="Email" id="email_input">
+                <label for="password_input">Password</label>
+                <input required class="register__item item--input" type="password" placeholder="Password" id="password_input">
+            </div>
+            <fieldset class="register__item item--role">
+                <legend>Choose your role</legend>
+                <select class="register__item item--input" name="" id="">
+                    <option class="register__item"  value="PROFESSIONAL">Freelancer</option>
+                    <option class="register__item" value="CLIENT">Client</option>
+                </select>
+
+                <p class="advice">"If you choose freelancer you will be redirect to create or conect your Stripe Connect Account"</p>
+            </fieldset>
+                <button type="submit" class="register__item item--button">Submit</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -47,6 +47,20 @@ services:
       - db
       - db_test
     command: sh -c "alembic upgrade head && uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+
+  frontend:
+    build: ./frontend
+    container_name: frontend-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - .frontend/:app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=false 
+      - WDS_SOCKET_PORT=0 
+    depends_on:
+      -api
 volumes:
   postgres_data:
 
